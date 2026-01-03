@@ -352,40 +352,16 @@ body {
     overflow: hidden;
 }
 
-.portfolio-placeholder {
+.portfolio-img {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     transition: transform 0.3s ease;
+    display: block;
 }
 
-.portfolio-item:hover .portfolio-placeholder {
+.portfolio-item:hover .portfolio-img {
     transform: scale(1.1);
-}
-
-.portfolio-1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.portfolio-2 {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.portfolio-3 {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.portfolio-4 {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-}
-
-.portfolio-5 {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-}
-
-.portfolio-6 {
-    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
 }
 
 .portfolio-overlay {
@@ -412,6 +388,17 @@ body {
 .portfolio-overlay p {
     opacity: 0.9;
     font-size: 0.95rem;
+}
+
+.portfolio-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.portfolio-link:focus,
+.portfolio-link:hover {
+    text-decoration: none;
 }
 
 /* Contact Section */
